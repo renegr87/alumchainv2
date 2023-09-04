@@ -1,10 +1,5 @@
-using Alumbrado.Abstracts;
-using Alumbrado.Models;
-using Alumbrado.Services;
-using System;
-using System.Drawing.Imaging;
-using System.Windows.Forms;
-using Nethereum.Web3;
+using Alumbrado.BLL.Abstracts;
+using Alumbrado.BLL.Models;
 
 namespace Alumbrado
 {
@@ -16,12 +11,11 @@ namespace Alumbrado
         // Readings
         private Reading[] Readings;
         // Services 
-        private IPublishService PublishService;
+        private IPublishService _PublishService;
 
-        public Main()
+        public Main(IPublishService PublishService)
         {
-            // TODO: DI
-            PublishService = new PublishService();
+            _PublishService = PublishService;
 
             InitializeComponent();
         }
@@ -35,7 +29,7 @@ namespace Alumbrado
             {
                 try 
                 {
-                    Readings = PublishService.LoadReadings(source);
+                    Readings = _PublishService.LoadReadings(source);
                 }catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
@@ -45,7 +39,7 @@ namespace Alumbrado
 
         private void bt_validate_Click(object sender, EventArgs e)
         {
-            var isValid = PublishService.ValidateReadings(Readings);
+            var isValid = _PublishService.ValidateReadings(Readings);
             var message = isValid ? "Valido" : "Invalido";
             lb_valid.Text = message;
         }

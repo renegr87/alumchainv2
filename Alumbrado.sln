@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alumbrado", "Alumbrado\Alumbrado.csproj", "{42C9B328-9FCA-4645-BB57-4CF63B885246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alumbrado", "Alumbrado\Alumbrado.csproj", "{42C9B328-9FCA-4645-BB57-4CF63B885246}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alumbrado.Tests", "AlumbradoTests\Alumbrado.Tests.csproj", "{D0566AB4-1E53-471A-97EC-5E0FA97F4570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alumbrado.BLL", "BLL\Alumbrado.BLL.csproj", "{DC240ABC-C59C-49E4-A303-1685E3F73BCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{42C9B328-9FCA-4645-BB57-4CF63B885246}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42C9B328-9FCA-4645-BB57-4CF63B885246}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42C9B328-9FCA-4645-BB57-4CF63B885246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0566AB4-1E53-471A-97EC-5E0FA97F4570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0566AB4-1E53-471A-97EC-5E0FA97F4570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0566AB4-1E53-471A-97EC-5E0FA97F4570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0566AB4-1E53-471A-97EC-5E0FA97F4570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC240ABC-C59C-49E4-A303-1685E3F73BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC240ABC-C59C-49E4-A303-1685E3F73BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC240ABC-C59C-49E4-A303-1685E3F73BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC240ABC-C59C-49E4-A303-1685E3F73BCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

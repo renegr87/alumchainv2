@@ -1,0 +1,12 @@
+D:\Devel\Rene\alumchainv2\BLL\bin\Debug\net6.0\Alumbrado.BLL.deps.json
+D:\Devel\Rene\alumchainv2\BLL\bin\Debug\net6.0\Alumbrado.BLL.dll
+D:\Devel\Rene\alumchainv2\BLL\bin\Debug\net6.0\Alumbrado.BLL.pdb
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\Alumbrado.BLL.csproj.AssemblyReference.cache
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\Alumbrado.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\Alumbrado.BLL.AssemblyInfoInputs.cache
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\Alumbrado.BLL.AssemblyInfo.cs
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\Alumbrado.BLL.csproj.CoreCompileInputs.cache
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\Alumbrado.BLL.dll
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\refint\Alumbrado.BLL.dll
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\Alumbrado.BLL.pdb
+D:\Devel\Rene\alumchainv2\BLL\obj\Debug\net6.0\ref\Alumbrado.BLL.dll

@@ -1,17 +1,37 @@
+using Alumbrado.BLL.Abstracts;
+using Alumbrado.BLL.Services;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
+
 namespace Alumbrado
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+        public static IServiceProvider? ServiceProvider { get; private set; }
+
         [STAThread]
-        static void Main()
+        public static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            var host = CreateHostBuilder().Build();
+            ServiceProvider = host.Services;
+
             ApplicationConfiguration.Initialize();
-            Application.Run(new Main());
+            Application.Run(ServiceProvider.GetRequiredService<Main>());
+        }
+
+        private static IHostBuilder CreateHostBuilder()
+        {
+            return Host.CreateDefaultBuilder()
+                .ConfigureServices((context, services) =>
+                {
+                    services.AddTransient<IPublishService, PublishService>();
+                    services.AddTransient<Main>();
+                });
         }
     }
 }
