@@ -2277,8 +2277,8 @@
     },
     "Alumbrado.BLL/1.0.0": {
       "type": "project",
-      "path": "../BLL/Alumbrado.BLL.csproj",
-      "msbuildProject": "../BLL/Alumbrado.BLL.csproj"
+      "path": "../Alumbrado.BLL/Alumbrado.BLL.csproj",
+      "msbuildProject": "../Alumbrado.BLL/Alumbrado.BLL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2322,8 +2322,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Devel\\Rene\\alumchainv2\\BLL\\Alumbrado.BLL.csproj": {
-              "projectPath": "D:\\Devel\\Rene\\alumchainv2\\BLL\\Alumbrado.BLL.csproj"
+            "D:\\Devel\\Rene\\alumchainv2\\Alumbrado.BLL\\Alumbrado.BLL.csproj": {
+              "projectPath": "D:\\Devel\\Rene\\alumchainv2\\Alumbrado.BLL\\Alumbrado.BLL.csproj"
             }
           }
         }

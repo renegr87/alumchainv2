@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BLL\Alumbrado.BLL.csproj" />
+    <ProjectReference Include="..\Alumbrado.BLL\Alumbrado.BLL.csproj" />
   </ItemGroup>
 
 </Project>
