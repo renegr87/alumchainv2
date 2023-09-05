@@ -1,5 +1,6 @@
 using Alumbrado.BLL.Abstracts;
 using Alumbrado.BLL.Models;
+using Microsoft.Extensions.Configuration;
 
 namespace Alumbrado
 {
@@ -12,10 +13,12 @@ namespace Alumbrado
         private Reading[] Readings;
         // Services 
         private IPublishService _PublishService;
+        private IConfiguration _Configuration;
 
-        public Main(IPublishService PublishService)
+        public Main(IPublishService publishService, IConfiguration configuration)
         {
-            _PublishService = PublishService;
+            _PublishService = publishService;
+            _Configuration = configuration;
 
             InitializeComponent();
         }

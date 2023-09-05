@@ -1,2 +1,10 @@
 .vs/Alumbrado/v17/TestStore/
 
+Alumbrado/bin/
+Alumbrado/obj/
+
+Alumbrado.BLL/bin/
+Alumbrado.BLL/obj/
+
+Alumbrado.Tests/bin/
+Alumbrado.Tests/obj/

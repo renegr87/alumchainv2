@@ -25,9 +25,9 @@ namespace Alumbrado.BLL.Services
             return readings;
         }
 
-        public void ToJWT(Reading[] readings)
+        public string Tokenize(Reading[] readings)
         {
-
+            return "";
         }
 
         public bool ValidateReadings(Reading[] readings) {

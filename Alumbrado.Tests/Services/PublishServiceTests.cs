@@ -53,7 +53,7 @@ namespace Alumbrado.Tests.Services
 
         #endregion
 
-        #region TBD
+        #region ValidateReadings
 
         [Test]
         public void When_ValidateReadings_IsInvalid()

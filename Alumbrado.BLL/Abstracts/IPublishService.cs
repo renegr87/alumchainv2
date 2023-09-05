@@ -7,5 +7,7 @@ namespace Alumbrado.BLL.Abstracts
         public Reading[] LoadReadings(string source);
 
         public bool ValidateReadings(Reading[] readings);
+
+        public string Tokenize(Reading[] readings);
     }
 }
