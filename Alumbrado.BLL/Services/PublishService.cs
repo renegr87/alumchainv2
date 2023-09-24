@@ -1,11 +1,21 @@
 ﻿using Alumbrado.BLL.Abstracts;
 using Alumbrado.BLL.Models;
+using Ipfs.Http;
+using Microsoft.Extensions.Configuration;
+using System.Text;
 using System.Text.Json;
 
 namespace Alumbrado.BLL.Services
 {
     public class PublishService: IPublishService
     {
+        private IConfiguration _configRoot;
+
+        public PublishService(IConfiguration configRoot)
+        {
+            _configRoot = configRoot;
+        }
+
         public Reading[] LoadReadings(string source)
         {
             if (string.IsNullOrEmpty(source)) 
@@ -45,5 +55,13 @@ namespace Alumbrado.BLL.Services
 
             return true;
         }
+
+        public async void PublishToIPFSAsync(string source)
+        {
+            var host = _configRoot["Ipfs:host"];
+            var ipfsClient = new IpfsClient(host);
+            await ipfsClient.FileSystem.AddFileAsync(source);
+        }
+
     }
 }

@@ -26,7 +26,6 @@ namespace Alumbrado
             //Host
             var hostBuilder = Host.CreateDefaultBuilder();
 
-
             // DI
             ConfigureServices(hostBuilder);
 

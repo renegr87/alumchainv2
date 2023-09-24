@@ -10,6 +10,7 @@ namespace Alumbrado
         private string _InitialDirectory = "c:\\";
         private string _Filter = "Json files (*.json)|*.json";
         // Readings
+        private string Source;
         private Reading[] Readings;
         // Services 
         private IPublishService _PublishService;
@@ -27,12 +28,12 @@ namespace Alumbrado
 
         private void bt_load_Click(object sender, EventArgs e)
         {
-            var source = GetSourceFromFile();
-            if(source is not null)
+            Source = GetSourceFromFile();
+            if(Source is not null)
             {
                 try 
                 {
-                    Readings = _PublishService.LoadReadings(source);
+                    Readings = _PublishService.LoadReadings(Source);
                 }catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
@@ -49,10 +50,7 @@ namespace Alumbrado
 
         private void bt_publish_Click(object sender, EventArgs e)
         {
-            // el codigo de la wallet aqui va
-            // Aqui va le código para publicar al blockchain  XD
-
-
+            _PublishService.PublishToIPFSAsync(Source);
         }
 
         #endregion

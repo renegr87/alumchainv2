@@ -9,5 +9,7 @@ namespace Alumbrado.BLL.Abstracts
         public bool ValidateReadings(Reading[] readings);
 
         public string Tokenize(Reading[] readings);
+
+        public void PublishToIPFSAsync(string source);
     }
 }
